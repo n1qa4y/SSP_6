@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './UserInfo.css';
-import Contacts from '../Contacts/Contacts';
+import IconPlusText from '../Decs/Decs';
 
 class UserInfo extends Component {
   render() {
@@ -22,16 +22,16 @@ class UserInfo extends Component {
           <p className="UserInfo-fullName">{fullName}</p>
           <p className="UserInfo-username">{username}</p>
           <p className="UserInfo-briefDescription">{briefDescription}</p>
-          <Contacts icon="address-card-o"
+          <IconPlusText icon="address-card-o"
                         href={social.href}
                         text={social.text}/>
-          <Contacts icon="map-marker"
+          <IconPlusText icon="map-marker"
                         href={location.href}
                         text={location.text}/>
-          <Contacts icon="envelope-o"
+          <IconPlusText icon="envelope-o"
                         href={email.href}
                         text={email.text}/>
-          <Contacts icon="link"
+          <IconPlusText icon="link"
                         href={personalLink.href}
                         text={personalLink.text}/>
         </div>
@@ -40,3 +40,4 @@ class UserInfo extends Component {
 }
 
 export default UserInfo;
+

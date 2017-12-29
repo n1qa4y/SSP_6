@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Col, Row, Grid } from 'react-bootstrap';
 import './App.css';
 import UserInfo from './UserInfo/UserInfo';
-import UserDet from './UserDet/UserDet';
+import UserDetails from './UserD/UserD';
 
 class App extends Component {
 
@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     let _this = this;
 
-    fetch("https://api.github.com/users/gaearon")
+    fetch("https://api.github.com/users/n1qa4y")
     .then(data => data.json())
     .then(data => {
       _this.setState({
@@ -78,7 +78,7 @@ class App extends Component {
                             contacts={contacts}/>
                 </Col>
                 <Col md={9} lg={9}>
-                  <UserDet details={details}/>
+                  <UserDetails details={details}/>
                 </Col>
               </Row>
             </Grid>
